@@ -1,0 +1,114 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 3,
+        "name": "As a user I want to login to Flipkart site",
+        "description": "",
+        "id": "login-functionality;as-a-user-i-want-to-login-to-flipkart-site",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 23382923200,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I am on login page",
+            "match": {
+              "location": "Login.i_am_on_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1001120500,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I enter \"acharya.aparna@gmail.com\", \"Cindrella1\" and click on Submit button",
+            "match": {
+              "arguments": [
+                {
+                  "val": "acharya.aparna@gmail.com",
+                  "offset": 9
+                },
+                {
+                  "val": "Cindrella1",
+                  "offset": 37
+                }
+              ],
+              "location": "Login.enter_username_password_submit(String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 17924200,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I land on home page",
+            "match": {
+              "location": "Login.i_land_on_home_page()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 9,
+        "name": "As a logged in user, I want to logout",
+        "description": "",
+        "id": "login-functionality;as-a-logged-in-user,-i-want-to-logout",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 305973600,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "I click logout button",
+            "match": {
+              "location": "Logout.i_click_logout_button()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 14094500,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "I land on home page",
+            "match": {
+              "location": "Login.i_land_on_home_page()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1382126800,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "I close browser",
+            "match": {
+              "location": "Logout.i_close_browser()"
+            },
+            "keyword": "And "
+          }
+        ]
+      }
+    ],
+    "name": "Login functionality",
+    "description": "",
+    "id": "login-functionality",
+    "keyword": "Feature",
+    "uri": "Login.feature"
+  }
+]
